@@ -1,0 +1,1 @@
+Let people search publictags and mytags.
