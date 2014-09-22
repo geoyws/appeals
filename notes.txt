@@ -1,1 +1,8 @@
 Let people search publictags and mytags.
+Need to also create officer functions.
+Keep pictures on phone. Even iOS. Application permissions to keep photos on phone. Allow for users to set defaults to require users to click-to-download media instead of auto-download. Also allow for users to set defaults to not save images into camera roll or Android folders. If images don't save into the file system... where do they save into while the app is running? A temporary folder? appname.app/tmp via phonegap is where we store them
+http://bit.ly/1uhD6kT
+That above link is to apple dev docs that talk about /tmp to store files and Libary/Caches to store cached stuff, like in ispaaa there might be a need to cache IMs and updates and data from previous sessions, so that the app feels lightning fast when it opens up, but loads new live data afterwards when the user requests refreshes. There is a lot of bloody work to be done.
+PhoneGap push alerts for IM. Aggregated by conversation.
+
+      <!-- conversations will have lower z-indexes than #myconversations and when they are clicked in #myconversations, the #{conversationid} div will do a 3D transform with the #myconversation div to switch places in a paper shuffle fashion from the left. This is so that #{conversationid}s remain in DOM and are fast for switching. The conversations will also be cached depending on the OS of the phone (iOS uses Library/caches). Media will be saved according to settings: in camera roll for iOS or folder for Android if user authorizes, or not saved at all, needing users to click to download to /tmp. 
